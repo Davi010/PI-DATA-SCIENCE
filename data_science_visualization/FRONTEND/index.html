@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>IA for Predictive Fire Analysis 🔥</h1>
+            <div id="map"></div>
+        </div>
+        <form id="formid">
+            <div class="linha">
+                <div class="input_box">
+                    <label for="latitude">Latitude</label>
+                    <input required type="number" step="any" id="latitude" name="latitude" placeholder="-17.55708">
+                </div>
+                <div class="input_box">
+                    <label for="longitude">Longitude</label>
+                    <input required type="number" step="any" id="longitude" name="longitude" placeholder="-57.20554">
+                </div>
+            </div>
+        
+            <button class="enviar" type="submit">Enviar</button>
+        </form>
+        <h3>> Em instantes, você receberá uma análise gráfica completa e indicadores assertivos que demonstram a probabilidade da ocorrência de incêndios, com causas naturais ou criminosas.</h3>
+    </header>
+    <section class="res_container">
+        <div class="container">
+            <div class="risco_fogo">
+                <h1 class="risco_number"></h1>
+                <span id="risco_text" class="risco_text">Resultado aparecerá aqui.</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./form.js"></script>
+<script src="./analytics.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="./mapa.js"></script>
+<script src="integracion.js"></script>
